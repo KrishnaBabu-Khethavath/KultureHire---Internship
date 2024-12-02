@@ -1,0 +1,104 @@
+1.Gender distribution of respondents from India:
+SELECT Gender, COUNT(*) as Count
+FROM post
+WHERE Country = 'IND'
+GROUP BY Gender;
+----------------------------------------------------
+2.Percentage of respondents from India interested in education abroad and sponsorship:
+SELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM post WHERE Country = 'IND')) as Percentage
+FROM post
+WHERE Country = 'IND' AND Study_Abroad = TRUE;
+---------------------------------------------------------------
+3.Top 6 influences on career aspirations for respondents in India:
+SELECT Influence_Factors, COUNT(*) as Count
+FROM post
+WHERE Country = 'IND'
+GROUP BY Influence_Factors
+ORDER BY Count DESC
+LIMIT 6;
+---------------------------------------------------------------------
+4.How career aspiration influences vary by gender in India:
+SELECT Gender, Influence_Factors, COUNT(*) as Count
+FROM post
+WHERE Country = 'IND'
+GROUP BY Gender, Influence_Factors
+ORDER BY Gender, Count DESC;
+---------------------------------------------------------------------------------
+5.Percentage of respondents willing to work for a company for at least 3 years:
+SELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM post)) as Percentage
+FROM post
+WHERE Employer_for_3_years IS NOT NULL;
+---------------------------------------------------------------------------------
+6.Number of respondents preferring to work for socially impactful companies:
+SELECT COUNT(*) as Count
+FROM post
+WHERE Work_With_Missionless_Company = TRUE;
+--------------------------------------------------------------------------
+7.Preference for socially impactful companies by gender:
+SELECT Gender, COUNT(*) as Count
+FROM post
+WHERE Work_With_Missionless_Company = TRUE
+GROUP BY Gender;
+------------------------------------------------------------------------------------
+8.Distribution of minimum expected salary in the first three years among respondents:
+SELECT Expected_Monthly_Salary_for_First_3_Years, COUNT(*) as Count
+FROM post
+GROUP BY Expected_Monthly_Salary_for_First_3_Years;
+------------------------------------------------------------------------------------
+9.Expected minimum monthly salary in hand:
+SELECT MIN(CAST(SUBSTRING(Expected_Monthly_Salary_for_First_3_Years, 1, LOCATE('k', Expected_Monthly_Salary_for_First_3_Years)-1) AS UNSIGNED)) as Minimum_Salary
+FROM post;
+-----------------------------------------------------------------------------------------------
+10.Percentage of respondents preferring remote working:
+SELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM post)) as Percentage
+FROM post
+WHERE Working_Environment = 4;
+------------------------------------------------------------------------------------------
+11.Preferred number of daily work hours:
+SELECT Working_Hours_EveryDay, COUNT(*) as Count
+FROM post
+GROUP BY Working_Hours_EveryDay
+ORDER BY Count DESC;
+------------------------------------------------------------------------------------
+12.Common work frustrations among respondents:
+SELECT Frustration_at_work, COUNT(*) as Count
+FROM post
+GROUP BY Frustration_at_work
+ORDER BY Count DESC;
+----------------------------------------------------------------------------
+13.Need for work-life balance interventions by gender:
+SELECT Gender, COUNT(*) as Count
+FROM post
+WHERE Break_To_Stay_Healthy = TRUE
+GROUP BY Gender;
+------------------------------------------------------------------------------------------
+14.Number of respondents willing to work under an abusive manager:
+SELECT COUNT(*) as Count
+FROM post
+WHERE Likelihood_Work_With_Manager LIKE '%abusive%';
+15.Distribution of minimum expected salary after five years:
+SELECT Expected_Monthly_Salary_After_5_years, COUNT(*) as Count
+FROM post
+GROUP BY Expected_Monthly_Salary_After_5_years;
+-------------------------------------------------------------------------------------------------
+16.Remote working preferences by gender:
+SELECT Gender, COUNT(*) as Count
+FROM post
+WHERE Working_Environment = 4
+GROUP BY Gender;
+-------------------------------------------------------------------------------------
+17.Top work frustrations for each gender:
+SELECT Gender, Frustration_at_work, COUNT(*) as Count
+FROM post
+GROUP BY Gender, Frustration_at_work
+ORDER BY Gender, Count DESC;
+-------------------------------------------------------------------------------------
+18.Factors boosting work happiness and productivity:
+SELECT Happier_and_productive_at_work, COUNT(*) as Count
+FROM post
+GROUP BY Happier_and_productive_at_work;
+-------------------------------------------------------------------------
+19.Percentage of respondents needing sponsorship for education abroad:
+SELECT (COUNT(*) * 100.0 / (SELECT COUNT(*) FROM post)) as Percentage
+FROM post
+WHERE Study_Abroad = TRUE AND Influence_Factors LIKE '%sponsorship%';
