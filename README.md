@@ -2,9 +2,9 @@
   <img src="https://kadhir7902.ongraphy.com/logo.png?v=5" alt="KultureHire Logo" style="max-width:100%;">
 </p>
 
-# 🚀 Excited to Announce the Successful Completion of My Data Analyst Internship at KultureHire! 🎉
+# 🚀  Completion of My Data Analyst Internship at KultureHire! 🎉
 
-I am thrilled to share that I have completed my Data Analyst internship with KultureHire! This journey has been an enriching experience, allowing me to work on a fascinating project: "Understanding Gen-Z Career Aspirations".
+ I have completed my Data Analyst internship with KultureHire! This journey has been an enriching experience, allowing me to work on a fascinating project: "Understanding Gen-Z Career Aspirations".
 
 ## 📊 Project Overview: Understanding Gen-Z Career Aspirations 🌟
 
