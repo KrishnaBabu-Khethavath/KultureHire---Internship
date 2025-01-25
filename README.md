@@ -1,12 +1,16 @@
+<p align="center">
+  <img src="https://kadhir7902.ongraphy.com/logo.png?v=5" alt="KultureHire Logo" style="max-width:100%;">
+</p>
 
-🚀 Excited to Announce the Successful Completion of My Data Analyst Internship at KultureHire! 🎉
+# 🚀 Excited to Announce the Successful Completion of My Data Analyst Internship at KultureHire! 🎉
 
 I am thrilled to share that I have completed my Data Analyst internship with KultureHire! This journey has been an enriching experience, allowing me to work on a fascinating project: "Understanding Gen-Z Career Aspirations".
 
-📊 Project Overview: Understanding Gen-Z Career Aspirations 🌟
+## 📊 Project Overview: Understanding Gen-Z Career Aspirations 🌟
 
 Throughout my internship, I focused on uncovering the career goals and aspirations of Gen-Z using a data-driven approach. Here’s a brief overview of the methodology and steps involved:
-🔍 Methodology and Approach:
+
+### 🔍 Methodology and Approach:
  1. 📋 Documentation using the 5W1H Framework: Created comprehensive documentation to understand the 'Who', 'What', 'When', 'Where', 'Why', and 'How' of Gen-Z career aspirations.
  2. 📊 Data Collection and Sourcing: Designed and distributed Google Survey forms and promoted them on LinkedIn to gather diverse data from Gen-Z respondents.
  3. 🧹 Data Cleaning and Standardization: Ensured data accuracy and consistency through meticulous cleaning and standardization processes.
@@ -14,8 +18,9 @@ Throughout my internship, I focused on uncovering the career goals and aspiratio
 
  5. 📊 Dashboard Presentation:
  - 📈 Power BI and Excel Dashboards: Created interactive dashboards to visualize key trends and findings, providing a deeper understanding of Gen-Z career aspirations.
- - 🌟 Key Insights:
- 🎯 Gen- z Common Career Goals: Analyzed overall responses, gender distribution, influencing factors, managerial preferences, and common aspirational jobs.
+ ### 🌟 Key Insights:
+  🎯 Gen- z Common Career Goals: Analyzed overall responses, gender distribution, influencing factors, managerial preferences, and common aspirational jobs.
+  
  🏢 Gen-z Environment Aspirations: Explored company type preferences, preferred employers, daily working hours, productivity factors, and gender-specific working environment preferences.
 
 This project provided valuable insights into the career goals and environmental aspirations of Gen-Z, enabling us to better understand their professional preferences and expectations.
