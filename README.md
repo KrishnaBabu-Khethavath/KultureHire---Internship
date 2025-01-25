@@ -4,7 +4,7 @@
 
 # 🚀  Completion of My Data Analyst Internship at KultureHire! 🎉
 
- I have completed my Data Analyst internship with KultureHire! This journey has been an enriching experience, allowing me to work on a fascinating project: "Understanding Gen-Z Career Aspirations".
+ I have completed my Data Analyst internship with KultureHire! This journey has been an enriching experience, allowing me to work on a fascinating project: 
 
 ## 📊 Project Overview: Understanding Gen-Z Career Aspirations 🌟
 
